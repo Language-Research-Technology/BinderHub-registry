@@ -1,11 +1,11 @@
 # Sample resources.yml file for inclusion in the root directory of a notebook repository.
 # Anything omitted is deemed to mean "don't care".
-resources:​
-  architecture:​
-  - x86_64​
-  - aarch64​
-cpu: 2​
-  gpu:​
-    nvidia.com/gpu: 1​
-  memory: 2G​
-  storage: 2Gi​
+resources:
+  architecture:
+  - x86_64
+  - aarch64
+cpu: 2
+  gpu:
+    nvidia.com/gpu: 1
+  memory: 2G
+  storage: 2Gi

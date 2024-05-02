@@ -1,7 +1,8 @@
 # BinderHub-registry
 This repo contains a JSON file which characterises all of the BinderHub deployments known to be able to run LDaCA notebooks. These definitions will be used by the LDaCA portal together with a resources.yml file in the root of each registered notebook repository to filter the BinderHubs which can support that notebook repo.
 
-The JSON is defined as follows:
+## BinderHub registry in BinderHub-registry.json file (Server-side)
+The BinderHub registry JSON is defined as follows:
 ```json
 {
 	"name": "LDaCA BinderHub Registry",
@@ -39,4 +40,23 @@ The JSON is defined as follows:
 }
 ```
 
+Note that memory and storage values are strings with units such as M, Mi, G, or Gi. The definitions are designed to match those in the JupyterHub configuration for Binder. Anything unknown or deemed unimportant can be left as null.
+
+## Resource specification in resources.yml file (Root directory of notebook repository)
+Minimum resource requirements for the notebook(s) in a given repository should be specified in a resources.yml file in the root directory of the notebook repository. The definitions are consistent with the ```BinderHub-registry.json``` file above.
+
+The resources.yml is defined as follows:
+```yaml
+# resources.yml file for inclusion in the root directory of a notebook repository.
+# Anything omitted is deemed to mean "don't care".
+resources:
+  architecture:  # Can be omitted if unimportant
+  - x86_64
+  - aarch64
+cpu: <minimum CPU count>
+  gpu:
+    nvidia.com/gpu:  <minimum count for specified GPU type>
+  memory: <minimum memory requirements>
+  storage: <minimum storage requirements>
+```
 Note that memory and storage values are strings with units such as M, Mi, G, or Gi. The definitions are designed to match those in the JupyterHub configuration for Binder. Anything unknown or deemed unimportant can be left as null.
