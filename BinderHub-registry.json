@@ -1,13 +1,13 @@
 {
 	"name": "LDaCA BinderHub Registry",
 	"description": "Registry of BinderHub deployments able to be used for LDaCA-ATAP Jupyter/R notebooks",
-	"url": "https://github.com/somewhere/something",
+	"url": "https://github.com/Language-Research-Technology/BinderHub-registry",
 	"binderhubs": [
 		{
 			"name": "LDaCA-ATAP BinderHub",
-			"description": "BinderHub deployment for LDaCA-ATAP project",
+			"description": "BinderHub deployment for LDaCA-ATAP project operated by AARNet on the NeCTAR Cloud",
 			"url": "https://binderhub.atap-binder.cloud.edu.au",
-			"authentication": "https://cilogon.org",
+			"authentication": "https://cilogon.aaf.edu.au",
 			"resources": {
 				"architecture": [
 					"x86_64"
@@ -28,9 +28,9 @@
 		},
 		{
 			"name": "LDaCA-ATAP Development BinderHub",
-			"description": "Developmment BinderHub deployment for LDaCA-ATAP project",
+			"description": "Developmment BinderHub deployment for LDaCA-ATAP project operated by AARNet on the NeCTAR Cloud",
 			"url": "https://dev-binderhub.atap-binder.cloud.edu.au",
-			"authentication": "https://cilogon.org",
+			"authentication": "https://test.cilogon.aaf.edu.au",
 			"authorisaton": "https://rems-uat.ldaca.edu.au",
 			"resources": {
 				"architecture": [
