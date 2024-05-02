@@ -24,7 +24,8 @@
 					"guarantee": "1G"
 				},
 				"storage": "5Gi"
-			}
+			},
+			"costPerHour": 0
 		},
 		{
 			"name": "LDaCA-ATAP Development BinderHub",
@@ -48,7 +49,8 @@
 					"guarantee": "1G"
 				},
 				"storage": "5Gi"
-			}
+			},
+			"costPerHour": 0
 		},
 		{
 			"name": "ARDC BinderHub",
@@ -71,7 +73,8 @@
 					"guarantee": "1G"
 				},
 				"storage": "5Gi"
-			}
+			},
+			"costPerHour": 0
 		},
 		{
 			"name": "MyBinder Public BinderHub",
@@ -92,7 +95,8 @@
 					"limit": "4G",
 					"guarantee": "1G"
 				}
-			}
+			},
+			"costPerHour": 0
 		},
 		{
 			"name": "Awesome LDaCA-ATAP Development BinderHub",
@@ -113,7 +117,9 @@
 					"guarantee": "4G"
 				},
 				"storage": "256Gi"
-			}
+			},
+			"testOnly": true,
+			"costPerHour": 100
 		}
 	]
 }

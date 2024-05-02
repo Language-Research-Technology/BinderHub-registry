@@ -31,7 +31,9 @@ The BinderHub registry JSON is defined as follows:
 					"guarantee": "<minimum memory>"
 				},
 				"storage": "<storage available>"
-			}
+			},
+			"testOnly": "<Boolean flag to indicate whether BinderHub should be omitted from live site>",
+			"costPerHour": "<relative cost metric for sorting Binderhubs - could be USD$?>"
 		},
 
         ...
@@ -40,7 +42,7 @@ The BinderHub registry JSON is defined as follows:
 }
 ```
 
-Note that memory and storage values are strings with units such as M, Mi, G, or Gi. The definitions are designed to match those in the JupyterHub configuration for Binder. Anything unknown or deemed unimportant can be left as null.
+Note that memory and storage values are strings with units such as M, Mi, G, or Gi. The definitions are designed to match those in the JupyterHub configuration for Binder. Anything unknown or deemed unimportant can be omitted or set as null.
 
 ## Resource specification in resources.yml file (Root directory of notebook repository)
 Minimum resource requirements for the notebook(s) in a given repository should be specified in a resources.yml file in the root directory of the notebook repository. The definitions are consistent with the ```BinderHub-registry.json``` file above.
@@ -59,4 +61,4 @@ cpu: <minimum CPU count>
   memory: <minimum memory requirements>
   storage: <minimum storage requirements>
 ```
-Note that memory and storage values are strings with units such as M, Mi, G, or Gi. The definitions are designed to match those in the JupyterHub configuration for Binder. Anything unknown or deemed unimportant can be left as null.
+Note that memory and storage values are strings with units such as M, Mi, G, or Gi. The definitions are designed to match those in the JupyterHub configuration for Binder. Anything unknown or deemed unimportant can be omitted or set as null.
