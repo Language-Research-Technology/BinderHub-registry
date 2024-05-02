@@ -1,5 +1,5 @@
 # BinderHub-registry
-This repo contains a JSON file which characterises all of the BinderHub deployments which can run LDaCA notebooks. These definitions will be used by the LDaCA portal with a resources.yml file in the root of each registered notebook repository to filter the BinderHubs which can support that notebook repo.
+This repo contains a JSON file which characterises all of the BinderHub deployments known to be able to run LDaCA notebooks. These definitions will be used by the LDaCA portal together with a resources.yml file in the root of each registered notebook repository to filter the BinderHubs which can support that notebook repo.
 
 The JSON is defined as follows:
 ```json
