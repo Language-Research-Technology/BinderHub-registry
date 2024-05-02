@@ -1,0 +1,119 @@
+{
+	"name": "LDaCA BinderHub Registry",
+	"description": "Registry of BinderHub deployments able to be used for LDaCA-ATAP Jupyter/R notebooks",
+	"url": "https://github.com/somewhere/something",
+	"binderhubs": [
+		{
+			"name": "LDaCA-ATAP BinderHub",
+			"description": "BinderHub deployment for LDaCA-ATAP project",
+			"url": "https://binderhub.atap-binder.cloud.edu.au",
+			"authentication": "https://cilogon.org",
+			"resources": {
+				"architecture": [
+					"x86_64"
+				],
+				"cpu": {
+					"limit": 2,
+					"guarantee": 0.5
+				},
+				"gpu": {
+					"nvidia.com/gpu": 0
+				},
+				"memory": {
+					"limit": "8G",
+					"guarantee": "1G"
+				},
+				"storage": "5Gi"
+			}
+		},
+		{
+			"name": "LDaCA-ATAP Development BinderHub",
+			"description": "Developmment BinderHub deployment for LDaCA-ATAP project",
+			"url": "https://dev-binderhub.atap-binder.cloud.edu.au",
+			"authentication": "https://cilogon.org",
+			"authorisaton": "https://rems-uat.ldaca.edu.au",
+			"resources": {
+				"architecture": [
+					"x86_64"
+				],
+				"cpu": {
+					"limit": 2,
+					"guarantee": 0.5
+				},
+				"gpu": {
+					"nvidia.com/gpu": 0
+				},
+				"memory": {
+					"limit": "8G",
+					"guarantee": "1G"
+				},
+				"storage": "5Gi"
+			}
+		},
+		{
+			"name": "ARDC BinderHub",
+			"description": "ARDC BinderHub on NeCTAR for Australian academic and research use",
+			"url": "https://dev-binderhub.atap-binder.cloud.edu.au",
+			"authentication": "https://aaf.edu.au/",
+			"resources": {
+				"architecture": [
+					"x86_64"
+				],
+				"cpu": {
+					"limit": 2,
+					"guarantee": 0.5
+				},
+				"gpu": {
+					"nvidia.com/gpu": 0
+				},
+				"memory": {
+					"limit": "8G",
+					"guarantee": "1G"
+				},
+				"storage": "5Gi"
+			}
+		},
+		{
+			"name": "MyBinder Public BinderHub",
+			"description": "Public BinderHub deployment for general use",
+			"url": "https://mybinder.org/",
+			"resources": {
+				"architecture": [
+					"x86_64"
+				],
+				"cpu": {
+					"limit": 1,
+					"guarantee": 0.5
+				},
+				"gpu": {
+					"nvidia.com/gpu": 0
+				},
+				"memory": {
+					"limit": "4G",
+					"guarantee": "1G"
+				}
+			}
+		},
+		{
+			"name": "Awesome LDaCA-ATAP Development BinderHub",
+			"description": "Fictitious Developmment BinderHub deployment for LDaCA-ATAP project",
+			"url": "https://awesome-binderhub.atap-binder.cloud.edu.au",
+			"authentication": "https://cilogon.org",
+			"authorisaton": "https://rems-uat.ldaca.edu.au",
+			"resources": {
+				"cpu": {
+					"limit": 32,
+					"guarantee": 8
+				},
+				"gpu": {
+					"nvidia.com/gpu": 32
+				},
+				"memory": {
+					"limit": "64G",
+					"guarantee": "4G"
+				},
+				"storage": "256Gi"
+			}
+		}
+	]
+}
