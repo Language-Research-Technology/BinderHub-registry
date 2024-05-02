@@ -5,7 +5,7 @@ resources:
   - x86_64
   - aarch64
 cpu: 2
-  gpu:
-    nvidia.com/gpu: 1
-  memory: 2G
-  storage: 2Gi
+gpu:
+  nvidia.com/gpu: 1
+memory: 2G
+storage: 2Gi

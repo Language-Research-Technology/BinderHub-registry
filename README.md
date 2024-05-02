@@ -56,9 +56,9 @@ resources:
   - x86_64
   - aarch64
 cpu: <minimum CPU count>
-  gpu:
-    nvidia.com/gpu:  <minimum count for specified GPU type>
-  memory: <minimum memory requirements>
-  storage: <minimum storage requirements>
+gpu:
+nvidia.com/gpu:  <minimum count for specified GPU type>
+memory: <minimum memory requirements>
+storage: <minimum storage requirements>
 ```
 Note that memory and storage values are strings with units such as M, Mi, G, or Gi. The definitions are designed to match those in the JupyterHub configuration for Binder. Anything unknown or deemed unimportant can be omitted or set as null.
