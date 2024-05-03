@@ -57,7 +57,7 @@ resources:
   - aarch64
 cpu: <minimum CPU count>
 gpu:
-nvidia.com/gpu:  <minimum count for specified GPU type>
+  nvidia.com/gpu:  <minimum count for specified GPU type>
 memory: <minimum memory requirements>
 storage: <minimum storage requirements>
 ```
