@@ -51,7 +51,7 @@ Minimum resource requirements for the notebook(s) in a given repository should b
 
 Note that the ```resources.yml``` file should be referenced in the schema.org ```availableOnDevice``` property in the associated repository RO-crate.
 
-The resources.yml is defined as follows:
+The ```resources.yml``` file is defined as follows:
 ```yaml
 # resources.yml file for inclusion in the root directory of a notebook repository.
 # Anything omitted is deemed to mean "don't care".
