@@ -49,9 +49,9 @@ Note that memory and storage values are strings with units such as M, Mi, G, or 
 ## Resource specification in resources.yml file (Root directory of notebook repository)
 Minimum resource requirements for the notebook(s) in a given repository should be specified in a resources.yml file in the root directory of the notebook repository. The definitions are consistent with the ```BinderHub-registry.json``` file above.
 
-Note that the ```resources.yml``` file should be referenced in the schema.org ```availableOnDevice``` property in the associated repository RO-crate, which should conform to [this RO-crate profile](https://github.com/Language-Research-Technology/ro-crate-editor-profiles/blob/main/profiles/software-profile.json).
+Note that the ```resources.yml``` file should be referenced in the schema.org [```availableOnDevice```](https://github.com/Language-Research-Technology/ro-crate-editor-profiles/blob/51e62edf5b2fc112787b6e91a0777378e24f5b6e/profiles/software-profile.json#L228) property in the associated repository RO-crate, which should conform to [this RO-crate profile](https://github.com/Language-Research-Technology/ro-crate-editor-profiles/blob/main/profiles/software-profile.json).
 
-The ```resources.yml``` file is defined as follows:
+The ```resources.yml``` file for notebook repositories is defined as follows:
 ```yaml
 # resources.yml file for inclusion in the root directory of a notebook repository.
 # Anything omitted is deemed to mean "don't care".
