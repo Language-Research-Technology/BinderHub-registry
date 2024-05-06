@@ -1,6 +1,8 @@
 # BinderHub-registry
 This repo contains a JSON file which characterises all of the BinderHub deployments known to be able to run LDaCA notebooks. These definitions will be used by the LDaCA portal together with a resources.yml file in the root of each registered notebook repository to filter the BinderHubs which can support that notebook repo.
 
+Please refer to the [eResearch Australasia 2023 presentation](https://conference.eresearch.edu.au/wp-content/uploads/2023/11/1045-Alex-Ip.pdf) for more context.
+
 ## BinderHub registry in BinderHub-registry.json file (Server-side)
 The BinderHub registry JSON is defined as follows:
 ```json
@@ -46,6 +48,8 @@ Note that memory and storage values are strings with units such as M, Mi, G, or 
 
 ## Resource specification in resources.yml file (Root directory of notebook repository)
 Minimum resource requirements for the notebook(s) in a given repository should be specified in a resources.yml file in the root directory of the notebook repository. The definitions are consistent with the ```BinderHub-registry.json``` file above.
+
+Note that the ```resources.yml``` file should be referenced in the schema.org ```availableOnDevice``` property in the associated repository RO-crate.
 
 The resources.yml is defined as follows:
 ```yaml
