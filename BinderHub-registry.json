@@ -50,6 +50,7 @@
 				},
 				"storage": "5Gi"
 			},
+			"testOnly": true,
 			"costPerHour": 0
 		},
 		{
@@ -74,12 +75,13 @@
 				},
 				"storage": "5Gi"
 			},
+			"testOnly": true,
 			"costPerHour": 0
 		},
 		{
 			"name": "MyBinder Public BinderHub",
 			"description": "Public BinderHub deployment for general use",
-			"url": "https://mybinder.org/",
+			"url": "https://mybinder.org",
 			"resources": {
 				"architecture": [
 					"x86_64"
