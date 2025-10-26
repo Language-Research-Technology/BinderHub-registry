@@ -75,7 +75,7 @@
 				},
 				"storage": "5Gi"
 			},
-			"testOnly": true,
+			"testOnly": false,
 			"costPerHour": 0
 		},
 		{
@@ -124,4 +124,5 @@
 			"costPerHour": 100
 		}
 	]
+
 }
