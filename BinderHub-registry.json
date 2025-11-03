@@ -56,7 +56,7 @@
 		{
 			"name": "ARDC BinderHub",
 			"description": "ARDC BinderHub on NeCTAR for Australian academic and research use",
-			"url": "https://binder.rc.nectar.org.au",
+			"url": "https://binderhub.rc.nectar.org.au",
 			"authentication": "https://aaf.edu.au/",
 			"resources": {
 				"architecture": [
@@ -126,4 +126,5 @@
 	]
 
 }
+
 
